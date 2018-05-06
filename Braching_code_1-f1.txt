@@ -1,0 +1,61 @@
+
+steven@LAPTOP-M8RB7JMP MINGW64 /c/Working/github/QA_GitBeginning (f1)
+$ git add -A
+
+
+steven@LAPTOP-M8RB7JMP MINGW64 /c/Working/github/QA_GitBeginning (f1)
+$ git commit -m "commited in 1-f1.tx in f1 branch"
+[f1 7c23750] commited in 1-f1.tx in f1 branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 1-f1.txt
+
+steven@LAPTOP-M8RB7JMP MINGW64 /c/Working/github/QA_GitBeginning (f1)
+$ git push origin f1
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 315 bytes | 315.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/stephenalgrithm/QA_GitBeginning.git
+ * [new branch]      f1 -> f1
+
+steven@LAPTOP-M8RB7JMP MINGW64 /c/Working/github/QA_GitBeginning (f1)
+$ git branch -a
+* f1
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/f1
+  remotes/origin/master
+
+steven@LAPTOP-M8RB7JMP MINGW64 /c/Working/github/QA_GitBeginning (f1)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+steven@LAPTOP-M8RB7JMP MINGW64 /c/Working/github/QA_GitBeginning (master)
+$ git merge f1
+Updating 8b56d0c..7c23750
+Fast-forward
+ 1-f1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 1-f1.txt
+
+steven@LAPTOP-M8RB7JMP MINGW64 /c/Working/github/QA_GitBeginning (master)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/stephenalgrithm/QA_GitBeginning.git
+   8b56d0c..7c23750  master -> master
+
+steven@LAPTOP-M8RB7JMP MINGW64 /c/Working/github/QA_GitBeginning (master)
+$ git brach --merged
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+steven@LAPTOP-M8RB7JMP MINGW64 /c/Working/github/QA_GitBeginning (master)
+$ git branch --merged
+  f1
+* master
+
+steven@LAPTOP-M8RB7JMP MINGW64 /c/Working/github/QA_GitBeginning (master)
